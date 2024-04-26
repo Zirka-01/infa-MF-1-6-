@@ -1,0 +1,10 @@
+import math 
+
+s2 = 12
+t = 3
+x = s2 - 4*t
+y = s2/t
+
+final = (((math.cos(x))**3) + 3*y)/(1+2*x+3*y)
+
+print(final)
