@@ -1,0 +1,21 @@
+from math import *
+
+print("Введите x:")
+
+x = float(input())
+
+print("Введите y:")
+
+y = float(input())
+
+print("Введите z:")
+
+z = float(input())
+
+x2yz = x+2*y-z
+xyzz = ((x + y + z)/x)
+maxxyz = max(x, y, z)
+
+u = min(xyzz, x2yz) + maxxyz
+
+print(u)
