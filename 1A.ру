@@ -1,0 +1,23 @@
+from math import*
+print("1)")
+y1 = 2
+z1 = 2
+x1 = 0
+print(z1**(5*y1))
+print("2)")
+x2 = 0.5
+
+print(sqrt(exp(sin(x2))+1)-cos(x2/3)**3)
+
+print("3)")
+
+x3 = 1
+y3 = 1.5
+
+print(((5.2 * x3)/(2*abs(y3)))-(4*log(x3**2))/(5*tan(x3)))
+
+print("4)")
+
+x4 = 0.3
+
+print(((atan(sqrt(x4 + 1))**3)/(x4 + 1.3)) + 3**x4)
