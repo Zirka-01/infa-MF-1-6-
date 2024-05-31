@@ -1,0 +1,23 @@
+def find_min_and_sum(matrix, column_num):
+    column = [row[column_num] for row in matrix]
+    min_element = min(column)
+    min_element_index = column.index(min_element)
+    
+    positive_sum = sum(filter(lambda x: x > 0, matrix[min_element_index]))
+    
+    return min_element, positive_sum
+
+def read_matrix_from_file(file_name):
+    with open(file_name, 'r') as file:
+        matrix = [[int(num) for num in line.split()] for line in file]
+    return matrix
+
+file_name = 'matrix.txt'  
+
+matrix = read_matrix_from_file(file_name)
+
+k = int(input("Введите номер столбца k: "))
+min_element, positive_sum = find_min_and_sum(matrix, k)
+
+print(f"Минимальный элемент в {k}-ом столбце: {min_element}")
+print(f"Сумма положительных элементов в строке с минимальным элементом: {positive_sum}")
